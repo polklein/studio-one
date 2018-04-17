@@ -11,7 +11,7 @@ $(document).ready(function() {
   var title = $('#record-title');
   var artist = $('#record-artist');
   var description = $('#record-description');
-  var goBack = $('#back-btn');
+  var goBack = $('#back-btn,  .home-btn');
 
 
 
