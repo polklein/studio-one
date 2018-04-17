@@ -12,43 +12,80 @@ $(document).ready(function() {
   var artist = $('#record-artist');
   var description = $('#record-description');
   var goBack = $('#back-btn,  .buffalo-back-btn');
+  var openRecord;  		// holds open record id (for next/prev button)
 
 
   $.getJSON('./records.json', function(data) {
     recordList = data;
-
+	
+	// Next previous button
+	$('.next-btn').on('click', function(event){
+      event.preventDefault();
+	  changeToRecord(++openRecord );
+    });
+	
+	  function changeToRecord(id) {
+		  var currentRecord = $('#'+id).find('.song-title').text();
+		  $.each(recordList, function(key, val) {
+			if (val.name == currentRecord) {
+			  image.attr('src', val.photo);
+			  title.text(val.name);
+			  artist.text(val.artist);
+			  description.text(val.description);
+			}
+		});
+	  $('body').addClass('show-details');
+	  recordDetails.show();
+	  recordDetails.scrollTop(0);
+	  recordListing.css('opacity', '0.01');
+	  recordListing.css('opacity', '0.01');
+	  // force back button on record detail view to show record list
+	  if (window.history && window.history.pushState) {
+		window.history.pushState(null, null, 'listing.html');
+		$(window).on('popstate', function() {
+		  $('body').removeClass('show-details');
+		  recordDetails.hide();
+		  recordListing.css('opacity', '1');
+		});
+	  }
+    }
+	
     // Loading record overlay details
     recordItem.on('click', function(event) {
       event.preventDefault();
-
-      var currentRecord = $(this).find('.song-title').text();
-      $.each(recordList, function(key, val) {
-        if (val.name == currentRecord) {
-          // console.log(val.name);
-          // console.log(val.photo);
-          // console.log(val.artist);
-          // console.log(val.description);
-          // console.log(val.year);
-          image.attr('src', val.photo);
-          title.text(val.name);
-          artist.text(val.artist);
-          description.text(val.description);
-        }
-      });
-      $('body').addClass('show-details');
-      recordDetails.show();
-      recordDetails.scrollTop(0);
-      recordListing.css('opacity', '0.01');
-      recordListing.css('opacity', '0.01');
-      // force back button on record detail view to show record list
-      if (window.history && window.history.pushState) {
-        window.history.pushState(null, null, 'listing.html');
-        $(window).on('popstate', function() {
-          $('body').removeClass('show-details');
-          recordDetails.hide();
-          recordListing.css('opacity', '1');
-        });
-      }
+	  
+	  openRecord = parseInt(this.id);
+	  changeToRecord(openRecord);
+		
+     //  var currentRecord = $(this).find('.song-title').text();
+// 	  openRecord = parseInt(this.id);			// store open record id (for next/prev button)
+//       $.each(recordList, function(key, val) {
+//         if (val.name == currentRecord) {
+//           // console.log(val.name);
+//           // console.log(val.photo);
+//           // console.log(val.artist);
+//           // console.log(val.description);
+//           // console.log(val.year);
+//           image.attr('src', val.photo);
+//           title.text(val.name);
+//           artist.text(val.artist);
+//           description.text(val.description);
+//         }
+//       });
+//       $('body').addClass('show-details');
+//       recordDetails.show();
+//       recordDetails.scrollTop(0);
+//       recordListing.css('opacity', '0.01');
+//       recordListing.css('opacity', '0.01');
+//       // force back button on record detail view to show record list
+//       if (window.history && window.history.pushState) {
+//         window.history.pushState(null, null, 'listing.html');
+//         $(window).on('popstate', function() {
+//           $('body').removeClass('show-details');
+//           recordDetails.hide();
+//           recordListing.css('opacity', '1');
+//         });
+//       }
     });
     // overlay details close
     goBack.on('click', function(event) {
