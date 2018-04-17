@@ -17,11 +17,24 @@ $(document).ready(function() {
 
   $.getJSON('./records.json', function(data) {
     recordList = data;
+
+    // Load record (overlay details)
+    recordItem.on('click', function(event) {
+      event.preventDefault();
+	  openRecord = parseInt(this.id);
+	  changeToRecord(openRecord);
+    });		
+ 
+	// Previous record button handler
+	$('.prev-btn').on('click', function(event){
+      event.preventDefault();
+	  changeToRecord(--openRecord);  // Decrement open record and change overlay details
+    });
 	
-	// Next previous button
+	// Next record button handler
 	$('.next-btn').on('click', function(event){
       event.preventDefault();
-	  changeToRecord(++openRecord );
+	  changeToRecord(++openRecord);  // Increment open record and change overlay details
     });
 	
 	  function changeToRecord(id) {
@@ -49,15 +62,8 @@ $(document).ready(function() {
 		});
 	  }
     }
-	
-    // Loading record overlay details
-    recordItem.on('click', function(event) {
-      event.preventDefault();
-	  
-	  openRecord = parseInt(this.id);
-	  changeToRecord(openRecord);
-		
-     //  var currentRecord = $(this).find('.song-title').text();
+
+//  var currentRecord = $(this).find('.song-title').text();
 // 	  openRecord = parseInt(this.id);			// store open record id (for next/prev button)
 //       $.each(recordList, function(key, val) {
 //         if (val.name == currentRecord) {
@@ -86,7 +92,7 @@ $(document).ready(function() {
 //           recordListing.css('opacity', '1');
 //         });
 //       }
-    });
+
     // overlay details close
     goBack.on('click', function(event) {
       event.preventDefault();
