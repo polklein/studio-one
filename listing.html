@@ -1,0 +1,2460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>Studio One</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="header">
+    <a class="home-btn" href="index.html">
+      <img src="img/buffalo-studio-one.png" alt="LRS Logo" width="120">
+    </a>
+    <input id="record-search" type="text" placeholder="Search">
+
+    <div id="sort">
+      <a class="check selected-sort" id="alpha-sort"></a><span class="sort-label">Alphabetical</span>
+      <a class="check" id="chron-sort"></a><span class="sort-label">Chronological</span>
+    </div>
+  </div>
+
+
+  <div id="no-results">No search results...<br/>try a different artist or title</div>
+
+  <div id="record-listing" class="alphabetical">
+    <a href="#record" class="record-item" id="0" style="background-image: url('img/62.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Abyssinians
+                <br><span class="song-title">Declaration Of Rights</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="1" style="background-image: url('img/162.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Al Campbell
+                <br><span class="song-title">Take A Ride</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="2" style="background-image: url('img/65.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Albert Tomlinson
+                <br><span class="song-title">Don't Wait For Me</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="3" style="background-image: url('img/126.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alexander Henry
+                <br><span class="song-title">Please Be True</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="4" style="background-image: url('img/66.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton And The Ili Sticks
+                <br><span class="song-title">I Don’t Want To Be Right (Version)</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="5" style="background-image: url('img/94.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">I’m Still In Love With You</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="6" style="background-image: url('img/145.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">Jamaica</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="7" style="background-image: url('img/155.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">Sitting In The Park</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="8" style="background-image: url('img/146.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">So Much Love</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="9" style="background-image: url('img/1.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">Ain’t That Loving You</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="10" style="background-image: url('img/28.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">Pearl</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="11" style="background-image: url('img/4.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">Can I Change My Mind</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="12" style="background-image: url('img/97.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">I'm Just A Guy</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="13" style="background-image: url('img/109.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">Mad Mad</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="14" style="background-image: url('img/47.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">African Descendents</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="15" style="background-image: url('img/176.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">Willow Tree</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="16" style="background-image: url('img/115.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Aneglia Prince
+                <br><span class="song-title">My Man Is Gone</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="17" style="background-image: url('img/95.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Anthony Rocky Ellis
+                <br><span class="song-title">I Am The Ruler</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="18" style="background-image: url('img/137.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Bassies
+                <br><span class="song-title">River Jordan</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="19" style="background-image: url('img/171.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Bob Andy
+                <br><span class="song-title">Too Experience</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="20" style="background-image: url('img/20.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Bob Andy
+                <br><span class="song-title">I've Got To Go Home</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="21" style="background-image: url('img/41.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Bob Andy
+                <br><span class="song-title">Unchained</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="22" style="background-image: url('img/80.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Bob Andy
+                <br><span class="song-title">Going Home</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="23" style="background-image: url('img/107.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Brentford Rockers
+                <br><span class="song-title">Love In The Dance Pt. 2</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="24" style="background-image: url('img/8.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Brigadier Jerry
+                <br><span class="song-title">Dance In A Montreal</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="25" style="background-image: url('img/32.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Brigadier Jerry
+                <br><span class="song-title">Ram Dance Master</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="26" style="background-image: url('img/10.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Brigadier Jerry
+                <br><span class="song-title">Every Man A Mi Bredren</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="27" style="background-image: url('img/67.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Burning Spear
+                <br><span class="song-title">Door Peeper</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="28" style="background-image: url('img/60.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Burning Spear
+                <br><span class="song-title">Creation Rebel</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="29" style="background-image: url('img/78.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Burning Spear
+                <br><span class="song-title">Get Ready</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="30" style="background-image: url('img/54.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Burning Spear
+                <br><span class="song-title">Call On You</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="31" style="background-image: url('img/180.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Burning Spear
+                <br><span class="song-title">Ethiopians Live It Out</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="32" style="background-image: url('img/119.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Dawn Penn
+                <br><span class="song-title">You Don't Love Me</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="33" style="background-image: url('img/50.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Cables
+                <br><span class="song-title">Baby Why</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="34" style="background-image: url('img/175.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Cables
+                <br><span class="song-title">What Kind Of World</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="35" style="background-image: url('img/116.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Carlton And The Shoes
+                <br><span class="song-title">Never Give Your Heart Away</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="36" style="background-image: url('img/108.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Carlton And The Shoes
+                <br><span class="song-title">Love Me Forever</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="37" style="background-image: url('img/82.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Carlton And The Shoes
+                <br><span class="song-title">Happy Land</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="38" style="background-image: url('img/5.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Cornell Campbell
+                <br><span class="song-title">My Conversation</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="39" style="background-image: url('img/31.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Cornell Campbell
+                <br><span class="song-title">Queen Of The Minstrel</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="40" style="background-image: url('img/79.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Count Ossie Im
+                <br><span class="song-title">Give Me Back Mi Language And Me Culture</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="41" style="background-image: url('img/3.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Culture
+                <br><span class="song-title">Behold</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="42" style="background-image: url('img/43.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Delroy Wilson
+                <br><span class="song-title">Won't You Come Home</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="43" style="background-image: url('img/61.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Delroy Wilson
+                <br><span class="song-title">Dancing Mood</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="44" style="background-image: url('img/121.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Delroy Wilson
+                <br><span class="song-title">I’m Not A King</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="45" style="background-image: url('img/11.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Delroy Wilson
+                <br><span class="song-title">Feel Good All Over</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="46" style="background-image: url('img/64.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Delroy Wilson
+                <br><span class="song-title">I Don’t Know Why</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="47" style="background-image: url('img/129.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Dennis Alcapone
+                <br><span class="song-title">Power Version</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="48" style="background-image: url('img/118.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Dennis Brown
+                <br><span class="song-title">No Man Is An Island</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="49" style="background-image: url('img/177.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Dennis Brown
+                <br><span class="song-title">Your Love Is Amazing</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="50" style="background-image: url('img/68.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Dennis Brown
+                <br><span class="song-title">Easy Take It Easy</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="51" style="background-image: url('img/140.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Devon Russel
+                <br><span class="song-title">Roots Natty Roots</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="52" style="background-image: url('img/165.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Devon Russel
+                <br><span class="song-title">Thanks And Praise</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="53" style="background-image: url('img/23.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Devon Russell
+                <br><span class="song-title">Money Problem</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="54" style="background-image: url('img/7.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">DJ Dawn and The Ranking Queens
+                <br><span class="song-title">Peace True Thing</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="55" style="background-image: url('img/136.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Dobby Dobson
+                <br><span class="song-title">Ride Me Donkey</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="56" style="background-image: url('img/83.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Dudley Sibley
+                <br><span class="song-title">Having A Party</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="57" style="background-image: url('img/181.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Eddie Constantine
+                <br><span class="song-title">Tenement Yard</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="58" style="background-image: url('img/157.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Eternals
+                <br><span class="song-title">Stars</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="59" style="background-image: url('img/148.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Ethiopian
+                <br><span class="song-title">When Will Be The End</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="60" style="background-image: url('img/153.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Ethiopian
+                <br><span class="song-title">Empty Belly</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="61" style="background-image: url('img/124.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Ethiopian
+                <br><span class="song-title">Open The Gate</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="62" style="background-image: url('img/152.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Ethiopian
+                <br><span class="song-title">Won’t Give Up</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="63" style="background-image: url('img/93.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Ethiopians
+                <br><span class="song-title">I’m Gonna Take Over Now</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="64" style="background-image: url('img/131.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Freddie McGregor
+                <br><span class="song-title">Rastaman Camp</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="65" style="background-image: url('img/151.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Freddie Mcgregor
+                <br><span class="song-title">Africa Here I Come</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="66" style="background-image: url('img/96.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Freddie McGregor
+                <br><span class="song-title">I Don't Know</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="67" style="background-image: url('img/91.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Freddie McGregor
+                <br><span class="song-title">How Could You Leave</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="68" style="background-image: url('img/36.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Freddie McGregor
+                <br><span class="song-title">Soul And Inspiration</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="69" style="background-image: url('img/52.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Freddie McGregor
+                <br><span class="song-title">Bobby Babylon</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="70" style="background-image: url('img/35.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Freddie Mcregor
+                <br><span class="song-title">I Shall Be Released</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="71" style="background-image: url('img/45.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Gaylads
+                <br><span class="song-title">Africa</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="72" style="background-image: url('img/19.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Gaylads
+                <br><span class="song-title">Joy In The Morning</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="73" style="background-image: url('img/12.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">George Dudley
+                <br><span class="song-title">Gates Of Zion</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="74" style="background-image: url('img/13.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Gladiators
+                <br><span class="song-title">Happy Man</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="75" style="background-image: url('img/139.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Gladiators
+                <br><span class="song-title">Roots Natty</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="76" style="background-image: url('img/53.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Gladiators
+                <br><span class="song-title">Bongo Red</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="77" style="background-image: url('img/134.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Gladiators
+                <br><span class="song-title">Rearrange</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="78" style="background-image: url('img/86.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Gladiators
+                <br><span class="song-title">Hello Carol</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="79" style="background-image: url('img/112.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Heptones
+                <br><span class="song-title">Message From A Black Man</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="80" style="background-image: url('img/57.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Heptones
+                <br><span class="song-title">Choice Of Colour</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="81" style="background-image: url('img/125.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Heptones
+                <br><span class="song-title">Party Time</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="82" style="background-image: url('img/9.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Heptones
+                <br><span class="song-title">Equal Rights</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="83" style="background-image: url('img/77.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Heptones
+                <br><span class="song-title">Get In The Groove</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="84" style="background-image: url('img/128.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Heptones
+                <br><span class="song-title">Pretty Looks</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="85" style="background-image: url('img/21.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Heptones
+                <br><span class="song-title">I Hold The Handle</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="86" style="background-image: url('img/24.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Horace Andy
+                <br><span class="song-title">Mr. Bassie</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="87" style="background-image: url('img/156.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Horace Andy
+                <br><span class="song-title">Skylarking</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="88" style="background-image: url('img/169.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Hubert Lee
+                <br><span class="song-title">Time Is Getting Hard</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="89" style="background-image: url('img/127.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Hubert Lee
+                <br><span class="song-title">Pressure And Slide</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="90" style="background-image: url('img/100.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Jackie Bernard
+                <br><span class="song-title">Jah Jah Way</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="91" style="background-image: url('img/178.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Jackie Mittoo
+                <br><span class="song-title">Big Car</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="92" style="background-image: url('img/74.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Jackie Mittoo
+                <br><span class="song-title">Freak Out</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="93" style="background-image: url('img/89.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Jackie Mittoo
+                <br><span class="song-title">Hot Milk</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="94" style="background-image: url('img/59.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Jennifer Lara
+                <br><span class="song-title">Consider Me</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="95" style="background-image: url('img/163.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Jennifer Lara
+                <br><span class="song-title">Tell Me Where</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="96" style="background-image: url('img/30.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Jim Brown
+                <br><span class="song-title">Pressure</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="97" style="background-image: url('img/114.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Joe White
+                <br><span class="song-title">My Guiding Star</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="98" style="background-image: url('img/174.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Joe White
+                <br><span class="song-title">Try A Little Tenderness</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="99" style="background-image: url('img/49.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">John Holt
+                <br><span class="song-title">A Love I Can Feel</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="100" style="background-image: url('img/18.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">John Holt
+                <br><span class="song-title">Hooligan (Change Your Style)</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="101" style="background-image: url('img/17.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">John Holt
+                <br><span class="song-title">My Sweet Lord</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="102" style="background-image: url('img/14.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">John Holt
+                <br><span class="song-title">Have You Ever Been In Love </span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="103" style="background-image: url('img/16.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">John Holt
+                <br><span class="song-title">Can’t Get You Off My Mind</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="104" style="background-image: url('img/159.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">John Holt
+                <br><span class="song-title">Strange Things</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="105" style="background-image: url('img/42.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Johnny Osbourne
+                <br><span class="song-title">Unity</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="106" style="background-image: url('img/38.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Johnny Osbourne
+                <br><span class="song-title">Time A Run Out</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="107" style="background-image: url('img/144.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Johnny Osbourne
+                <br><span class="song-title">Jah Promise</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="108" style="background-image: url('img/149.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Johnny Osbourne
+                <br><span class="song-title">Sing Jah Style</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="109" style="background-image: url('img/103.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Johnny Osbourne
+                <br><span class="song-title">Lend Me The Sixteen</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="110" style="background-image: url('img/173.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Johnny Osbourne
+                <br><span class="song-title">Truth And Rights</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="111" style="background-image: url('img/29.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Judah Eskender Tafari
+                <br><span class="song-title">Jah Light</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="112" style="background-image: url('img/63.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Ken Boothe
+                <br><span class="song-title">I Don’t Want To See You Cry</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="113" style="background-image: url('img/34.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Ken Boothe
+                <br><span class="song-title">Set Me Free</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="114" style="background-image: url('img/87.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Ken Boothe
+                <br><span class="song-title">Home, Home, Home</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="115" style="background-image: url('img/92.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Ken Parker
+                <br><span class="song-title">How Strong</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="116" style="background-image: url('img/102.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">King Rocky
+                <br><span class="song-title">The King Is Back</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="117" style="background-image: url('img/25.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Larry Marshall
+                <br><span class="song-title">Nanny Goat</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="118" style="background-image: url('img/168.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Larry Marshall And Sound Dimension
+                <br><span class="song-title">Throw Mi Corn (Ver.)</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="119" style="background-image: url('img/81.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Leroy Sibbles
+                <br><span class="song-title">Groove Me</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="120" style="background-image: url('img/70.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Leroy Sibbles
+                <br><span class="song-title">Express Yourself</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="121" style="background-image: url('img/46.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Lester Sterling
+                <br><span class="song-title">Afrikaan Beat</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="122" style="background-image: url('img/106.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Lone Ranger
+                <br><span class="song-title">Love Bump</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="123" style="background-image: url('img/56.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Lone Ranger
+                <br><span class="song-title">Chase Them Crazy</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="124" style="background-image: url('img/164.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Mad Lads
+                <br><span class="song-title">Ten To One</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="125" style="background-image: url('img/72.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Marcia Griffiths
+                <br><span class="song-title">Feel Like Jumping</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="126" style="background-image: url('img/105.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Melodians
+                <br><span class="song-title">Let’s Join Together</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="127" style="background-image: url('img/117.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Michigan and Smiley
+                <br><span class="song-title">Nice Up The Dance</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="128" style="background-image: url('img/141.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Michigan and Smiley
+                <br><span class="song-title">Rub A Dub Style</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="129" style="background-image: url('img/48.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Mr. Foundation
+                <br><span class="song-title">All Rudies In Jail</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="130" style="background-image: url('img/135.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Norma Fraser
+                <br><span class="song-title">Respect</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="131" style="background-image: url('img/73.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Norma Fraser
+                <br><span class="song-title">The First Cut Is The Deepest</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="132" style="background-image: url('img/104.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Otis Gayle
+                <br><span class="song-title">Let Me Get To Know You</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="133" style="background-image: url('img/182.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Paragons
+                <br><span class="song-title">My Satisfaction</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="134" style="background-image: url('img/98.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Peince Jazzbo
+                <br><span class="song-title">Imperial I</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="135" style="background-image: url('img/172.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Peter Tosh And The Wailers
+                <br><span class="song-title">Treat Me Good</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="136" style="background-image: url('img/55.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Richard Ace
+                <br><span class="song-title">Can’t Get Enough</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="137" style="background-image: url('img/150.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Righteous Flames
+                <br><span class="song-title">I Was Born To Be Loved</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="138" style="background-image: url('img/142.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Roland Alphonso
+                <br><span class="song-title">Shelly Belly</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="139" style="background-image: url('img/110.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Roland Alphonso
+                <br><span class="song-title">Mellow Mood</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="140" style="background-image: url('img/71.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Rolando-Coral And Sound Dimension
+                <br><span class="song-title">Feeling Nice</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="141" style="background-image: url('img/85.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Roy And Enid
+                <br><span class="song-title">He'll Have To Go</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="142" style="background-image: url('img/15.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Sharks
+                <br><span class="song-title">How Could I Live</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="143" style="background-image: url('img/58.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Silvertones
+                <br><span class="song-title">Come Forward</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="144" style="background-image: url('img/33.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Slim Smith
+                <br><span class="song-title">Rougher Yet</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="145" style="background-image: url('img/26.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Slim Smith
+                <br><span class="song-title">Never Let Go</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="146" style="background-image: url('img/22.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Soul Two
+                <br><span class="song-title">Puppy Love</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="147" style="background-image: url('img/161.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Soul Vendors
+                <br><span class="song-title">Swing Easy</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="148" style="background-image: url('img/166.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Soul Vendors
+                <br><span class="song-title">Drum Song</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="149" style="background-image: url('img/154.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Soul Vendors
+                <br><span class="song-title">Death In The Arena</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="150" style="background-image: url('img/120.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Soul Vendors
+                <br><span class="song-title">Darker Shade Of Black</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="151" style="background-image: url('img/75.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Soul Vendors
+                <br><span class="song-title">Frozen Soul</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="152" style="background-image: url('img/170.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Sound Dimension
+                <br><span class="song-title">Time Is Tight</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="153" style="background-image: url('img/133.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Sound Dimension
+                <br><span class="song-title">Real Rock</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="154" style="background-image: url('img/84.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Sound Dimension
+                <br><span class="song-title">Heavy Dub</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="155" style="background-image: url('img/138.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Sound Dimension
+                <br><span class="song-title">Rockfort Rock</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="156" style="background-image: url('img/76.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Sound Dimension
+                <br><span class="song-title">Full Up</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="157" style="background-image: url('img/37.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Sugar Minott
+                <br><span class="song-title">Change Your Ways</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="158" style="background-image: url('img/122.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Sugar Minott
+                <br><span class="song-title">Oh Mr DC</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="159" style="background-image: url('img/111.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Termites
+                <br><span class="song-title">Have Mercy Mr Percy</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="160" style="background-image: url('img/69.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Theo Beckford
+                <br><span class="song-title">Easy Snapping</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="161" style="background-image: url('img/179.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Tonettes
+                <br><span class="song-title">I’ll Give It To You</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="162" style="background-image: url('img/44.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Viceroys
+                <br><span class="song-title">Ya Ho</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="163" style="background-image: url('img/101.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Wailers
+                <br><span class="song-title">Jail House</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="164" style="background-image: url('img/132.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Wailers
+                <br><span class="song-title">Rasta Shook Them Up</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="165" style="background-image: url('img/99.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Wailers
+                <br><span class="song-title">I’m Still Waiting</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="166" style="background-image: url('img/123.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Wailers
+                <br><span class="song-title">One Love</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="167" style="background-image: url('img/147.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Wailers
+                <br><span class="song-title">Sinner Man</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="168" style="background-image: url('img/143.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Wailers
+                <br><span class="song-title">Simmer Down</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="169" style="background-image: url('img/51.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Wailing Souls
+                <br><span class="song-title">Back Out</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="170" style="background-image: url('img/113.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Westmorelites
+                <br><span class="song-title">Miss Haite Taite</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="171" style="background-image: url('img/2.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Willie Williams
+                <br><span class="song-title">Armageddon Time</span>
+            </p>
+        </div>
+    </a>
+  </div>
+  <!-- end alphabetical listing -->
+
+  <div id="record-listing" class="chronological">
+    <a href="#record" class="record-item" id="0" style="background-image: url('img/69.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Theo Beckford
+                <br><span class="song-title">Easy Snapping</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="1" style="background-image: url('img/143.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Wailers
+                <br><span class="song-title">Simmer Down</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="2" style="background-image: url('img/99.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Wailers
+                <br><span class="song-title">I’m Still Waiting</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="3" style="background-image: url('img/123.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Wailers
+                <br><span class="song-title">One Love</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="4" style="background-image: url('img/93.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Ethiopians
+                <br><span class="song-title">I’m Gonna Take Over Now</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="5" style="background-image: url('img/63.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Ken Boothe
+                <br><span class="song-title">I Don’t Want To See You Cry</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="6" style="background-image: url('img/101.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Wailers
+                <br><span class="song-title">Jail House</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="7" style="background-image: url('img/132.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Wailers
+                <br><span class="song-title">Rasta Shook Them Up</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="8" style="background-image: url('img/147.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Wailers
+                <br><span class="song-title">Sinner Man</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="9" style="background-image: url('img/94.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">I’m Still In Love With You</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="10" style="background-image: url('img/146.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">So Much Love</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="11" style="background-image: url('img/97.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">I'm Just A Guy</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="12" style="background-image: url('img/137.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Bassies
+                <br><span class="song-title">River Jordan</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="13" style="background-image: url('img/119.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Dawn Penn
+                <br><span class="song-title">You Don't Love Me</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="14" style="background-image: url('img/43.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Delroy Wilson
+                <br><span class="song-title">Won't You Come Home</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="15" style="background-image: url('img/121.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Delroy Wilson
+                <br><span class="song-title">I’m Not A King</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="16" style="background-image: url('img/45.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Gaylads
+                <br><span class="song-title">Africa</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="17" style="background-image: url('img/87.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Ken Boothe
+                <br><span class="song-title">Home, Home, Home</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="18" style="background-image: url('img/92.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Ken Parker
+                <br><span class="song-title">How Strong</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="19" style="background-image: url('img/105.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Melodians
+                <br><span class="song-title">Let’s Join Together</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="20" style="background-image: url('img/48.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Mr. Foundation
+                <br><span class="song-title">All Rudies In Jail</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="21" style="background-image: url('img/73.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Norma Fraser
+                <br><span class="song-title">The First Cut Is The Deepest</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="22" style="background-image: url('img/172.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Peter Tosh And The Wailers
+                <br><span class="song-title">Treat Me Good</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="23" style="background-image: url('img/33.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Slim Smith
+                <br><span class="song-title">Rougher Yet</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="24" style="background-image: url('img/26.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Slim Smith
+                <br><span class="song-title">Never Let Go</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="25" style="background-image: url('img/161.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Soul Vendors
+                <br><span class="song-title">Swing Easy</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="26" style="background-image: url('img/166.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Soul Vendors
+                <br><span class="song-title">Drum Song</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="27" style="background-image: url('img/120.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Soul Vendors
+                <br><span class="song-title">Darker Shade Of Black</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="28" style="background-image: url('img/111.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Termites
+                <br><span class="song-title">Have Mercy Mr Percy</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="29" style="background-image: url('img/65.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Albert Tomlinson
+                <br><span class="song-title">Don't Wait For Me</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="30" style="background-image: url('img/4.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">Can I Change My Mind</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="31" style="background-image: url('img/109.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">Mad Mad</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="32" style="background-image: url('img/95.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Anthony Rocky Ellis
+                <br><span class="song-title">I Am The Ruler</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="33" style="background-image: url('img/171.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Bob Andy
+                <br><span class="song-title">Too Experience</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="34" style="background-image: url('img/50.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Cables
+                <br><span class="song-title">Baby Why</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="35" style="background-image: url('img/175.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Cables
+                <br><span class="song-title">What Kind Of World</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="36" style="background-image: url('img/108.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Carlton And The Shoes
+                <br><span class="song-title">Love Me Forever</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="37" style="background-image: url('img/82.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Carlton And The Shoes
+                <br><span class="song-title">Happy Land</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="38" style="background-image: url('img/61.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Delroy Wilson
+                <br><span class="song-title">Dancing Mood</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="39" style="background-image: url('img/11.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Delroy Wilson
+                <br><span class="song-title">Feel Good All Over</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="40" style="background-image: url('img/19.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Gaylads
+                <br><span class="song-title">Joy In The Morning</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="41" style="background-image: url('img/125.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Heptones
+                <br><span class="song-title">Party Time</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="42" style="background-image: url('img/128.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Heptones
+                <br><span class="song-title">Pretty Looks</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="43" style="background-image: url('img/21.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Heptones
+                <br><span class="song-title">I Hold The Handle</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="44" style="background-image: url('img/114.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Joe White
+                <br><span class="song-title">My Guiding Star</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="45" style="background-image: url('img/174.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Joe White
+                <br><span class="song-title">Try A Little Tenderness</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="46" style="background-image: url('img/102.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">King Rocky
+                <br><span class="song-title">The King Is Back</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="47" style="background-image: url('img/46.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Lester Sterling
+                <br><span class="song-title">Afrikaan Beat</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="48" style="background-image: url('img/72.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Marcia Griffiths
+                <br><span class="song-title">Feel Like Jumping</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="49" style="background-image: url('img/135.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Norma Fraser
+                <br><span class="song-title">Respect</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="50" style="background-image: url('img/85.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Roy And Enid
+                <br><span class="song-title">He'll Have To Go</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="51" style="background-image: url('img/15.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Sharks
+                <br><span class="song-title">How Could I Live</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="52" style="background-image: url('img/22.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Soul Two
+                <br><span class="song-title">Puppy Love</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="53" style="background-image: url('img/179.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Tonettes
+                <br><span class="song-title">I’ll Give It To You</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="54" style="background-image: url('img/113.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Westmorelites
+                <br><span class="song-title">Miss Haite Taite</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="55" style="background-image: url('img/126.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alexander Henry
+                <br><span class="song-title">Please Be True</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="56" style="background-image: url('img/145.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">Jamaica</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="57" style="background-image: url('img/155.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">Sitting In The Park</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="58" style="background-image: url('img/28.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">Pearl</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="59" style="background-image: url('img/41.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Bob Andy
+                <br><span class="song-title">Unchained</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="60" style="background-image: url('img/80.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Bob Andy
+                <br><span class="song-title">Going Home</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="61" style="background-image: url('img/67.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Burning Spear
+                <br><span class="song-title">Door Peeper</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="62" style="background-image: url('img/68.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Dennis Brown
+                <br><span class="song-title">Easy Take It Easy</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="63" style="background-image: url('img/157.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Eternals
+                <br><span class="song-title">Stars</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="64" style="background-image: url('img/86.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Gladiators
+                <br><span class="song-title">Hello Carol</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="65" style="background-image: url('img/112.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Heptones
+                <br><span class="song-title">Message From A Black Man</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="66" style="background-image: url('img/75.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Soul Vendors
+                <br><span class="song-title">Frozen Soul</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="67" style="background-image: url('img/170.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Sound Dimension
+                <br><span class="song-title">Time Is Tight</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="68" style="background-image: url('img/76.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Sound Dimension
+                <br><span class="song-title">Full Up</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="69" style="background-image: url('img/62.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Abyssinians
+                <br><span class="song-title">Declaration Of Rights</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="70" style="background-image: url('img/79.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Count Ossie Im
+                <br><span class="song-title">Give Me Back Mi Language And Me Culture</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="71" style="background-image: url('img/118.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Dennis Brown
+                <br><span class="song-title">No Man Is An Island</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="72" style="background-image: url('img/177.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Dennis Brown
+                <br><span class="song-title">Your Love Is Amazing</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="73" style="background-image: url('img/83.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Dudley Sibley
+                <br><span class="song-title">Having A Party</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="74" style="background-image: url('img/57.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Heptones
+                <br><span class="song-title">Choice Of Colour</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="75" style="background-image: url('img/77.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Heptones
+                <br><span class="song-title">Get In The Groove</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="76" style="background-image: url('img/178.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Jackie Mittoo
+                <br><span class="song-title">Big Car</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="77" style="background-image: url('img/74.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Jackie Mittoo
+                <br><span class="song-title">Freak Out</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="78" style="background-image: url('img/49.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">John Holt
+                <br><span class="song-title">A Love I Can Feel</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="79" style="background-image: url('img/81.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Leroy Sibbles
+                <br><span class="song-title">Groove Me</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="80" style="background-image: url('img/70.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Leroy Sibbles
+                <br><span class="song-title">Express Yourself</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="81" style="background-image: url('img/51.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Wailing Souls
+                <br><span class="song-title">Back Out</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="82" style="background-image: url('img/180.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Burning Spear
+                <br><span class="song-title">Ethiopians Live It Out</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="83" style="background-image: url('img/64.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Delroy Wilson
+                <br><span class="song-title">I Don’t Know Why</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="84" style="background-image: url('img/16.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">John Holt
+                <br><span class="song-title">Can’t Get You Off My Mind</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="85" style="background-image: url('img/159.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">John Holt
+                <br><span class="song-title">Strange Things</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="86" style="background-image: url('img/164.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Mad Lads
+                <br><span class="song-title">Ten To One</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="87" style="background-image: url('img/142.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Roland Alphonso
+                <br><span class="song-title">Shelly Belly</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="88" style="background-image: url('img/110.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Roland Alphonso
+                <br><span class="song-title">Mellow Mood</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="89" style="background-image: url('img/66.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton And The Ili Sticks
+                <br><span class="song-title">I Don’t Want To Be Right (Version)</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="90" style="background-image: url('img/129.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Dennis Alcapone
+                <br><span class="song-title">Power Version</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="91" style="background-image: url('img/156.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Horace Andy
+                <br><span class="song-title">Skylarking</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="92" style="background-image: url('img/100.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Jackie Bernard
+                <br><span class="song-title">Jah Jah Way</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="93" style="background-image: url('img/17.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">John Holt
+                <br><span class="song-title">My Sweet Lord</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="94" style="background-image: url('img/98.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Peince Jazzbo
+                <br><span class="song-title">Imperial I</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="95" style="background-image: url('img/138.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Sound Dimension
+                <br><span class="song-title">Rockfort Rock</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="96" style="background-image: url('img/162.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Al Campbell
+                <br><span class="song-title">Take A Ride</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="97" style="background-image: url('img/47.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">African Descendents</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="98" style="background-image: url('img/168.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Larry Marshall And Sound Dimension
+                <br><span class="song-title">Throw Mi Corn (Ver.)</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="99" style="background-image: url('img/104.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Otis Gayle
+                <br><span class="song-title">Let Me Get To Know You</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="100" style="background-image: url('img/54.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Burning Spear
+                <br><span class="song-title">Call On You</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="101" style="background-image: url('img/53.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Gladiators
+                <br><span class="song-title">Bongo Red</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="102" style="background-image: url('img/14.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">John Holt
+                <br><span class="song-title">Have You Ever Been In Love </span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="103" style="background-image: url('img/55.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Richard Ace
+                <br><span class="song-title">Can’t Get Enough</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="104" style="background-image: url('img/60.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Burning Spear
+                <br><span class="song-title">Creation Rebel</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="105" style="background-image: url('img/78.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Burning Spear
+                <br><span class="song-title">Get Ready</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="106" style="background-image: url('img/96.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Freddie McGregor
+                <br><span class="song-title">I Don't Know</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="107" style="background-image: url('img/139.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Gladiators
+                <br><span class="song-title">Roots Natty</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="108" style="background-image: url('img/71.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Rolando-Coral And Sound Dimension
+                <br><span class="song-title">Feeling Nice</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="109" style="background-image: url('img/131.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Freddie McGregor
+                <br><span class="song-title">Rastaman Camp</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="110" style="background-image: url('img/134.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Gladiators
+                <br><span class="song-title">Rearrange</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="111" style="background-image: url('img/84.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Sound Dimension
+                <br><span class="song-title">Heavy Dub</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="112" style="background-image: url('img/176.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">Willow Tree</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="113" style="background-image: url('img/20.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Bob Andy
+                <br><span class="song-title">I've Got To Go Home</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="114" style="background-image: url('img/116.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Carlton And The Shoes
+                <br><span class="song-title">Never Give Your Heart Away</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="115" style="background-image: url('img/136.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Dobby Dobson
+                <br><span class="song-title">Ride Me Donkey</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="116" style="background-image: url('img/36.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Freddie McGregor
+                <br><span class="song-title">Soul And Inspiration</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="117" style="background-image: url('img/35.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Freddie Mcregor
+                <br><span class="song-title">I Shall Be Released</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="118" style="background-image: url('img/169.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Hubert Lee
+                <br><span class="song-title">Time Is Getting Hard</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="119" style="background-image: url('img/89.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Jackie Mittoo
+                <br><span class="song-title">Hot Milk</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="120" style="background-image: url('img/56.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Lone Ranger
+                <br><span class="song-title">Chase Them Crazy</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="121" style="background-image: url('img/182.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Paragons
+                <br><span class="song-title">My Satisfaction</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="122" style="background-image: url('img/150.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Righteous Flames
+                <br><span class="song-title">I Was Born To Be Loved</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="123" style="background-image: url('img/37.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Sugar Minott
+                <br><span class="song-title">Change Your Ways</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="124" style="background-image: url('img/44.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Viceroys
+                <br><span class="song-title">Ya Ho</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="125" style="background-image: url('img/1.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Alton Ellis
+                <br><span class="song-title">Ain’t That Loving You</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="126" style="background-image: url('img/3.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Culture
+                <br><span class="song-title">Behold</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="127" style="background-image: url('img/7.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">DJ Dawn and The Ranking Queens
+                <br><span class="song-title">Peace True Thing</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="128" style="background-image: url('img/91.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Freddie McGregor
+                <br><span class="song-title">How Could You Leave</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="129" style="background-image: url('img/9.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Heptones
+                <br><span class="song-title">Equal Rights</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="130" style="background-image: url('img/24.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Horace Andy
+                <br><span class="song-title">Mr. Bassie</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="131" style="background-image: url('img/127.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Hubert Lee
+                <br><span class="song-title">Pressure And Slide</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="132" style="background-image: url('img/18.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">John Holt
+                <br><span class="song-title">Hooligan (Change Your Style)</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="133" style="background-image: url('img/103.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Johnny Osbourne
+                <br><span class="song-title">Lend Me The Sixteen</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="134" style="background-image: url('img/29.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Judah Eskender Tafari
+                <br><span class="song-title">Jah Light</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="135" style="background-image: url('img/34.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Ken Boothe
+                <br><span class="song-title">Set Me Free</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="136" style="background-image: url('img/154.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Soul Vendors
+                <br><span class="song-title">Death In The Arena</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="137" style="background-image: url('img/133.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Sound Dimension
+                <br><span class="song-title">Real Rock</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="138" style="background-image: url('img/122.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Sugar Minott
+                <br><span class="song-title">Oh Mr DC</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="139" style="background-image: url('img/5.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Cornell Campbell
+                <br><span class="song-title">My Conversation</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="140" style="background-image: url('img/124.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Ethiopian
+                <br><span class="song-title">Open The Gate</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="141" style="background-image: url('img/52.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Freddie McGregor
+                <br><span class="song-title">Bobby Babylon</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="142" style="background-image: url('img/12.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">George Dudley
+                <br><span class="song-title">Gates Of Zion</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="143" style="background-image: url('img/13.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Gladiators
+                <br><span class="song-title">Happy Man</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="144" style="background-image: url('img/144.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Johnny Osbourne
+                <br><span class="song-title">Jah Promise</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="145" style="background-image: url('img/149.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Johnny Osbourne
+                <br><span class="song-title">Sing Jah Style</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="146" style="background-image: url('img/173.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Johnny Osbourne
+                <br><span class="song-title">Truth And Rights</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="147" style="background-image: url('img/25.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Larry Marshall
+                <br><span class="song-title">Nanny Goat</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="148" style="background-image: url('img/117.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Michigan and Smiley
+                <br><span class="song-title">Nice Up The Dance</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="149" style="background-image: url('img/141.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Michigan and Smiley
+                <br><span class="song-title">Rub A Dub Style</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="150" style="background-image: url('img/2.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Willie Williams
+                <br><span class="song-title">Armageddon Time</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="151" style="background-image: url('img/115.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Aneglia Prince
+                <br><span class="song-title">My Man Is Gone</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="152" style="background-image: url('img/148.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Ethiopian
+                <br><span class="song-title">When Will Be The End</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="153" style="background-image: url('img/153.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Ethiopian
+                <br><span class="song-title">Empty Belly</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="154" style="background-image: url('img/152.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Ethiopian
+                <br><span class="song-title">Won’t Give Up</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="155" style="background-image: url('img/151.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Freddie Mcgregor
+                <br><span class="song-title">Africa Here I Come</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="156" style="background-image: url('img/59.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Jennifer Lara
+                <br><span class="song-title">Consider Me</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="157" style="background-image: url('img/107.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Brentford Rockers
+                <br><span class="song-title">Love In The Dance Pt. 2</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="158" style="background-image: url('img/140.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Devon Russel
+                <br><span class="song-title">Roots Natty</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="159" style="background-image: url('img/165.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Devon Russel
+                <br><span class="song-title">Thanks And Praise</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="160" style="background-image: url('img/42.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Johnny Osbourne
+                <br><span class="song-title">Unity</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="161" style="background-image: url('img/106.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Lone Ranger
+                <br><span class="song-title">Love Bump</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="162" style="background-image: url('img/118.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">The Silvertones
+                <br><span class="song-title">Come Forward</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="163" style="background-image: url('img/31.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Cornell Campbell
+                <br><span class="song-title">Queen Of The Minstrel</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="164" style="background-image: url('img/32.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Brigadier Jerry
+                <br><span class="song-title">Ram Dance Master</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="165" style="background-image: url('img/10.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Brigadier Jerry
+                <br><span class="song-title">Every Man A Mi Bredren</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="166" style="background-image: url('img/163.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Jennifer Lara
+                <br><span class="song-title">Tell Me Where</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="167" style="background-image: url('img/30.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Jim Brown
+                <br><span class="song-title">Pressure</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="168" style="background-image: url('img/38.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Johnny Osbourne
+                <br><span class="song-title">Time A Run Out</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="169" style="background-image: url('img/8.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Brigadier Jerry
+                <br><span class="song-title">Dance In A Montreal</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="170" style="background-image: url('img/23.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Devon Russell
+                <br><span class="song-title">Money Problem</span>
+            </p>
+        </div>
+    </a>
+    <a href="#record" class="record-item" id="171" style="background-image: url('img/181.jpg');">
+        <div class="record-overlay">
+            <p class="record-name">Eddie Constantine
+                <br><span class="song-title">Tenement Yard</span>
+            </p>
+        </div>
+    </a>
+  </div>
+  <!-- end chronological listing -->
+
+  <div id="record-detail-overlay">
+    <div class="header">
+      <a class="home-btn" href="listing.html"><img src="img/buffalo-studio-one.png" alt="LRS Logo" width="120"></a>
+    </div>
+    <div id="record-info">
+      <img id="record-image" src="" alt="no image available">
+      <h2 id="record-title"></h2>
+      <h3 id="record-artist"></h3>
+      <p id="record-description"></p>
+    </div>
+    <a id="back-btn" href="listing.html">go back</a>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
