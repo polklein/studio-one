@@ -37,14 +37,13 @@ body {
   }
 }
 
-
-.home-btn {
+.home-btn, #buffalo-back-btn {
   text-decoration: none;
   color:#333;
   font-size: 20px;
   line-height: 18px;
   font-family: 'trixie-plainregular';
-  /* ie 10 hack */ 
+  /* ie 10 hack */
   border:0 !important;
   outline:0 !important;
   border-width:0 !important;
@@ -57,10 +56,52 @@ body {
 }
 
 .home-btn img {
-    border:0 !important;
+  border:0 !important;
   outline:0 !important;
   border-width:0 !important;
   border-color:white !important;
+}
+
+#record-nav {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto 40px auto;
+}
+
+.next-btn, .prev-btn {
+  font-family: 'trixie-plainregular';
+  border: none;
+  outline: none;
+  padding: 3px 10px;
+  margin-top: -25px;
+  background-color: #555;
+  color: white;
+  font-size: 100%;
+  text-transform: uppercase;;
+  font-weight: normal;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.prev-btn {
+  margin-right: 20px;
+}
+
+.next-btn {
+  margin-left: 20px;
+}
+
+.next-btn:hover, .prev-btn:hover {
+  background-color: black;
+}
+
+.nav-pipe {
+  position: relative;
+  bottom: -10px;
+  left: 0;
+  font-size: 300%;
+  font-weight: 600;
+  color: #555;
 }
 
 @media screen and (min-width: 525px){
@@ -109,7 +150,6 @@ body {
     margin: 10px auto;
   }
 }
-
 
 #record-listing.chronological {
   display: none;
@@ -293,19 +333,25 @@ body {
 }
 
 #back-btn {
-  text-decoration: none;
-  color: black;
+  text-decoration: underline;
   display: block;
+  width: 100px;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight:600;
   text-transform:uppercase;
+  border: none;
+  outline: none;
+  padding: 3px 0;
+  color: black;
+  font-size: 100%;
 }
 #back-btn:hover {
   text-shadow: 1px 1px 10px #999;
 }
-
 
 #record-detail-overlay {
   display: none;
@@ -323,7 +369,6 @@ body {
 .show-details {
   overflow: hidden;
 }
-
 
 #record-info {
   text-align: center;
@@ -362,6 +407,7 @@ body {
   height: 20px;
   text-align: center;
 }
+
 @media screen and (min-width: 525px){
   #sort {
     position: absolute;
@@ -369,6 +415,7 @@ body {
     top: 65px;
   }
 }
+
 @media screen and (max-width: 524px){
 
   #record-info {
@@ -393,6 +440,7 @@ body {
   margin: 0 10px;
   vertical-align: top;
 }
+
 @keyframes loader {
   0%    {transform: rotate(0deg);}
   100%  {transform: rotate(360deg);}
