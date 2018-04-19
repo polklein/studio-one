@@ -13,6 +13,13 @@ $(document).ready(function() {
   var description = $('#record-description');
   var goBack = $('#back-btn, #buffalo-back-btn');
   var openRecord;  		// holds open record id (for next/prev button)
+  var chronList = false;
+  var chronOffset = 10000;
+
+  // Fix Chronological Record Listing id's (add 10000) so they are unique
+  $('.chronological .record-item').each(function(index, record){
+    $(record).attr('id', (parseInt($(record).attr('id')) + chronOffset) + '');
+  });
 
 
   $.getJSON('./records.json', function(data) {
@@ -25,26 +32,26 @@ $(document).ready(function() {
 	  changeToRecord(openRecord);
     });
 
-	// Previous record button handler
-	$('.prev-btn').on('click', function(event){
-      event.preventDefault();
-      // Decrement open record and change overlay details
-      if (--openRecord < 0)
-        openRecord = recordList.length - 1;
-	    changeToRecord(openRecord);
-    });
+  	// Previous record button handler
+  	$('.prev-btn').on('click', function(event){
+        event.preventDefault();
+        // Decrement open record and change overlay details
+        if (--openRecord < 0)
+          openRecord = (chronList ? chronOffset + recordList.length - 1 : recordList.length - 1);
+  	    changeToRecord(openRecord);
+      });
 
-	// Next record button handler
-	$('.next-btn').on('click', function(event){
-      event.preventDefault();
-      // Increment open record and change overlay details
-      if (++openRecord >= recordList.length)
-        openRecord = 0;
-	    changeToRecord(openRecord);
-    });
+  	// Next record button handler
+  	$('.next-btn').on('click', function(event){
+        event.preventDefault();
+        // Increment open record and change overlay details
+        if (++openRecord >= (chronList ? recordList.length + chronOffset : recordList.length))
+          openRecord = 0;
+  	    changeToRecord(openRecord);
+      });
 
 	  function changeToRecord(id) {
-		  var currentRecord = $('#'+id).find('.song-title').text();
+		  var currentRecord = $('#' + id).find('.song-title').text();
 		  $.each(recordList, function(key, val) {
   			if (val.name == currentRecord) {
   			  image.attr('src', val.photo);
@@ -76,7 +83,7 @@ $(document).ready(function() {
       recordDetails.hide();
       recordListing.css('opacity', '1');
       var top = ($("#"+openRecord).offset()).top - 300;  // 300: height of each record thumbnail
-      console.log("top: " + top);
+      console.log("top: " + top, "open record: " + openRecord);
       $(document).scrollTop(top);
     });
   });
@@ -89,6 +96,7 @@ $(document).ready(function() {
   $('#alpha-sort').on('click', function(e) {
     e.preventDefault();
     console.log('alpha');
+    chronList = false;
     chronologicalList.hide();
     alphabeticalList.show();
     $('#chron-sort').removeClass('selected-sort');
@@ -97,6 +105,7 @@ $(document).ready(function() {
   $('#chron-sort').on('click', function(e) {
     e.preventDefault();
     console.log('chron');
+    chronList = true;
     alphabeticalList.hide();
     chronologicalList.show();
     $('#alpha-sort').removeClass('selected-sort');
