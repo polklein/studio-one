@@ -36,7 +36,7 @@ $(document).ready(function() {
   	$('.prev-btn').on('click', function(event){
         event.preventDefault();
         // Decrement open record and change overlay details
-        if (--openRecord < 0)
+        if (--openRecord < (chronList ? chronOffset : 0))
           openRecord = (chronList ? chronOffset + recordList.length - 1 : recordList.length - 1);
   	    changeToRecord(openRecord);
       });
@@ -46,7 +46,7 @@ $(document).ready(function() {
         event.preventDefault();
         // Increment open record and change overlay details
         if (++openRecord >= (chronList ? recordList.length + chronOffset : recordList.length))
-          openRecord = 0;
+          openRecord = (chronList ? chronOffset : 0);
   	    changeToRecord(openRecord);
       });
 
