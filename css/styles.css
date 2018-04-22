@@ -37,7 +37,7 @@ body {
   }
 }
 
-.home-btn, #buffalo-back-btn {
+.home-btn, .buffalo-back-btn {
   text-decoration: none;
   color:#333;
   font-size: 20px;
@@ -55,7 +55,8 @@ body {
   margin-top:20px;
 }
 
-.home-btn img {
+.home-btn img,
+.buffalo-back-btn img {
   border:0 !important;
   outline:0 !important;
   border-width:0 !important;
@@ -104,14 +105,14 @@ body {
 }
 
 @media screen and (min-width: 525px){
-  .home-btn {
+  .home-btn, .buffalo-back-btn {
     position: absolute;
     top: 15px;
     left: 25px;
   }
 }
 @media screen and (max-width: 524px){
-  .home-btn {
+  .home-btn, .buffalo-back-btn {
     display: block;
     text-align: center;
     margin-top: 25px;
